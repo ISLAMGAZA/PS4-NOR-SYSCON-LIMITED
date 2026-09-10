@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+
+# PyInstaller build artifacts
+*.spec
+build/
+
+# Compiled EXEs (released via GitHub Releases, not tracked in git)
+RELEASE/*.exe
+RELEASE/*.zip
+
+# Generated cache / reports
+RELEASE/pair_index.json
+RELEASE/MATCHER_REPORT_*.txt
+
+# User data directories
+DONORS/
+DUMPS/
+OUTPUT/
+WORKS/
+TEST/
+BAD DUMPS/
+
+# Third party tools
+BwE_PS4_NOR_Validator 2.0.7/
+ps4-wee-tools-pro-v1.1.3/
+
+# Temp / personal files
+build_tmp/
+_fix_nor.py
+build_exe.py
+my plan.txt
+OpenCode_files/
+OpenCode.html
+watermelon.ico
+
+# License secrets (private, never commit)
+.lic_secret
+ps4_nsrepair/_lic_key.py
+DONORS/.trial
+DONORS/.donor_id
+DONORS/license.key
+DONORS/license_*.txt
+
+# Donor-derived databases (regenerated locally from DONORS - never publish)
+blob_calibration.json
+blob_calibration_sources.json
+hash_db.json
+dynamic_blacklist.json
+nvs_fields_learned.json
+
+# Local licensing / usage state
+.lic_usage
+license.key
+license_*.txt
