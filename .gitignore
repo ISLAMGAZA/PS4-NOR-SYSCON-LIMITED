@@ -10,7 +10,6 @@ dist/
 build/
 
 # Compiled EXEs (released via GitHub Releases, not tracked in git)
-RELEASE/*.exe
 RELEASE/*.zip
 
 # Generated cache / reports
@@ -36,7 +35,6 @@ build_exe.py
 my plan.txt
 OpenCode_files/
 OpenCode.html
-watermelon.ico
 
 # License secrets (private, never commit)
 .lic_secret
