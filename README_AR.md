@@ -2,6 +2,14 @@
 **أداة احترافية لإصلاح NOR (sflash) + Syscon لأجهزة بلايستيشن 4 - النسخة المحدودة**
 Professional PS4 NOR (sflash) + Syscon repair toolkit - Limited Edition.
 
+## دعم / احصل على النسخة الكاملة
+
+التجربة المجانية (5 محاولات إصلاح) تعمل على هذا الإصدار المحدود. احصل على النسخة الكاملة - إصلاحات بلا حد وكل الخيارات (4 / D / R / X / Y / Z):
+
+▶ **https://ko-fi.com/s/3255858621**  (صفحة الشراء على Ko-fi)
+
+بعد الشراء: شغل البرنامج الكامل، انسخ `HWID` وأرسله (واتساب / بريد / تيك توك - انظر التواصل) لتستلم `license.key`.
+
 **المالك / Owner:** ISLAM JA - github.com/ISLAMGAZA
 
 > **التجربة: 5 محاولات تصليح** (وليس وقتًا). كل إصلاح ناجح يستهلك محاولة واحدة.
@@ -70,3 +78,12 @@ PS4_NOR_SYSCON_EASY_TOOL_Limited.exe cli
 
 **© ISLAM JA. الملكية خاصة - يُمنع إعادة التوزيع أو البيع دون إذن كتابي.**
 Proprietary - redistribution or commercial resale without written permission is prohibited.
+## Screenshots / لقطات
+
+![1](1.PNG)
+
+![2](2.PNG)
+
+![3](3.PNG)
+
+![4](4.PNG)

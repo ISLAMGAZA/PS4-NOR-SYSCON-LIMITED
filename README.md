@@ -1,5 +1,13 @@
 
 
+## Support / Get the FULL Edition
+
+Free trial (5 REPAIR ATTEMPTS) runs this Limited EXE. Get the **FULL edition** - unlimited repairs and every option (4 / D / R / X / Y / Z):
+
+▶ **https://ko-fi.com/s/3255858621**  (Ko-fi purchase page)
+
+After purchase: run the FULL EXE, copy your `HWID`, and send it (WhatsApp / Email / TikTok - see Contact) to receive your `license.key`.
+
 ---
 
 ## UPDATE - 2026-09-12 (build 0098)
