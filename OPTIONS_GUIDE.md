@@ -44,16 +44,31 @@ discovery, diagnosis, and EAP key check. Produces an HTML report.
 ## 2 - Syscon Analyser
 
 **EN:** Read-only inspection of a 512KB Syscon dump: validation, firmware info,
-DEBUG state, SNVS/NVS viewers, patchability check. Also hosts the advanced
-Syscon operations (SNVS patch A-E, rebuild, factory reset, boot mode).
+DEBUG state, SNVS/NVS viewers, patchability check. Also hosts the Syscon
+repair operations - including **`F` = FULL Syscon Repair (2 outputs)**.
 
 **AR:** فحص للقراءة فقط لدمب السيسكون (512KB): تحقق، معلومات البرمجية، حالة
-الديباج، عارضا SNVS/NVS، فحص قابلية الترقيع. ويحتوي أيضًا عمليات السيسكون
-المتقدمة (ترقيع SNVS A-E، إعادة البناء، ضبط المصنع، نمط الإقلاع).
+الديباج، عارضا SNVS/NVS، فحص قابلية الترقيع. ويحتوي أيضًا عمليات إصلاح
+السيسكون - ومنها **`F` = إصلاح السيسكون الكامل (مخرجان)**.
+
+### F - Full Syscon Repair (safe, 2 outputs) / إصلاح السيسكون الكامل
+| Output | What it does | When to use |
+|---|---|---|
+| `<orig>_<rand>_syscon_revert` | Drops ONE FW step (the newest FW-update group is FF'd **in place**, layout preserved) + `DEBUG=0x85` | With a NOR slot switch / downgrade |
+| `<orig>_<rand>_syscon_repair` | Keeps every FW step, removes only SAMU's **pending-update intent** + `DEBUG=0x85` | Boot repair without changing FW |
+
+- The newest group is chosen by **write counter** (not by list position), so it
+  is correct even on a wrapped SNVS ring buffer.
+- The original dump is **never** modified; both outputs are new files.
+- Flash order: **NOR first, then the matching Syscon output**.
 
 **Note / ملاحظة:** Syscon must be paired with the CoreOS patch - never use it
 separately (BwE rule). / السيسكون يجب أن يُقرن بترقيع CoreOS - لا يُستخدم
 منفردًا أبدًا (قاعدة BwE).
+
+**Hidden (not shown in the menu):** 6 (SNVS patch A-E), 8 (factory reset),
+12 (surgical patch), 13 (strip SYS2), 14 (clean SNVS for downgrade) - they use
+the block-model writer or destroy identity, so they are no longer offered.
 
 ---
 
@@ -233,3 +248,35 @@ prohibited. / جميع الحقوق محفوظة لـ ISLAM JA. يُمنع ال�
 - Email / البريد: **islamabuaker83@gmail.com**
 - TikTok: https://tiktok.com/@ps4easytool
 - GitHub: https://github.com/ISLAMGAZA/PS4-NOR-SYSCON-LIMITED
+
+---
+
+## UPDATE - 2026-09-12 (build 0098)
+
+**New in this build:**
+- **Y. Regenerate NVS (CID/UNK) - 3 outputs**: donor-based NVS regeneration in 3 variants
+  (M1 accurate bytes / M2 blind last-half / M3 both) exactly in the spirit of the
+  WeeTools PRO feature, with per-console protections (EAP keys, HDD, FW_VER, core_swch).
+  The donor list is shown CLOSEST -> FARTHEST and YOU pick (Enter = closest).
+- **Firmware trust rule**: an explicitly present FW_VER that lies inside the
+  plausible band of the SouthBridge is TRUSTED (nothing overrides it); blank or
+  out-of-band values trigger evidence-based determination + a confirm gate with
+  the ranked donor list (option 4).
+- **Unified selection** (X / Z / Y / 4): ranked closest-first donor lists based on
+  Board ID + FW + SKU evidence - no silent decisions.
+- **Licensing**: license.key is now RSA-2048 signed; it verifies on ANY machine
+  with no secret present (public key embedded). Keys are HWID-locked.
+- **Contact when the trial is exhausted**:
+  WhatsApp +201097714567 | Email islamabuaker83@gmail.com | TikTok ps4easytool
+
+## Donors - FULL packages (Google Drive)
+
+All donor packs (NOR raw, nordonors, Syscon, EAP/EMC/Torus blobs) are hosted on
+Google Drive:
+
+**https://drive.google.com/drive/folders/1nw79XTzTtsucSJt-p0gZZDlYZowBEdHS?usp=drive_link**
+
+Archive password: **`ISLAMJAMEL`**
+
+Three small convenience packs are attached to this release too
+(DONORS-minimal, DONORS-NOR-own-full, DONORS-Syscon-minimal).

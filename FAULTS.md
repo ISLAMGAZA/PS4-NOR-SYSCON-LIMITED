@@ -32,3 +32,20 @@
 | W25Q256JV | EAP تالف | Z |
 
 Generated: 2026-09-04 - Tool v2.0-beta
+
+---
+
+## UPDATE - 2026-09-12 (build 0098) - NEW diagnosed cases
+
+| Case | Diagnosis | Handling |
+|------|-----------|----------|
+| FW: FF.FF (blank FW_VER) | Never-booted / wiped NVS1 state; FW must be DERIVED (CoreOS exact-hit, EAP/EMC tables) or picked by the user from the ranked list | Option 4 confirm gate / Y donor list |
+| FW_VER explicit but OUT of band (e.g. 14.04) | Impossible stamp - the field is not trusted | Consensus + gate |
+| EAP_KBL unknown MD5 but family-consistent (e.g. FC16C143 = 97.66% similar to 12.50) | Genuine region variant NOT in the tables - replacement with a different-gen blob would BRICK | KEEP, report family similarity |
+| CoreOS slot shows a version with NO exact DB hit | Possible self-indexed circular evidence | Trust-rule ignores it when the explicit FW is in-band |
+| Donor with blank FW_VER | Unsafe field donor - EXCLUDED from the library (moved to _EXCLUDED_blankFW) | Not offered |
+| HDD/EAP-Key transfer by Regenerate NVS | WeeTools PRO does NOT transfer them either (verified) | Protected by design |
+
+Full donor packages (all types) on Google Drive:
+**https://drive.google.com/drive/folders/1nw79XTzTtsucSJt-p0gZZDlYZowBEdHS?usp=drive_link**
+Archive password: **`ISLAMJAMEL`**

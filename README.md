@@ -1,3 +1,36 @@
+
+
+---
+
+## UPDATE - 2026-09-12 (build 0098)
+
+**New in this build:**
+- **Y. Regenerate NVS (CID/UNK) - 3 outputs**: donor-based NVS regeneration in 3 variants
+  (M1 accurate bytes / M2 blind last-half / M3 both) exactly in the spirit of the
+  WeeTools PRO feature, with per-console protections (EAP keys, HDD, FW_VER, core_swch).
+  The donor list is shown CLOSEST -> FARTHEST and YOU pick (Enter = closest).
+- **Firmware trust rule**: an explicitly present FW_VER that lies inside the
+  plausible band of the SouthBridge is TRUSTED (nothing overrides it); blank or
+  out-of-band values trigger evidence-based determination + a confirm gate with
+  the ranked donor list (option 4).
+- **Unified selection** (X / Z / Y / 4): ranked closest-first donor lists based on
+  Board ID + FW + SKU evidence - no silent decisions.
+- **Licensing**: license.key is now RSA-2048 signed; it verifies on ANY machine
+  with no secret present (public key embedded). Keys are HWID-locked.
+- **Contact when the trial is exhausted**:
+  WhatsApp +201097714567 | Email islamabuaker83@gmail.com | TikTok ps4easytool
+
+## Donors - FULL packages (Google Drive)
+
+All donor packs (NOR raw, nordonors, Syscon, EAP/EMC/Torus blobs) are hosted on
+Google Drive:
+
+**https://drive.google.com/drive/folders/1nw79XTzTtsucSJt-p0gZZDlYZowBEdHS?usp=drive_link**
+
+Archive password: **`ISLAMJAMEL`**
+
+Three small convenience packs are attached to this release too
+(DONORS-minimal, DONORS-NOR-own-full, DONORS-Syscon-minimal).
 ![1](1.PNG)
 
 # PS4 NOR-SYSCON EASY TOOL - Limited Edition v2.0-beta

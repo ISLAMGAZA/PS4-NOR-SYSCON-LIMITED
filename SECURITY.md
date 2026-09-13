@@ -146,3 +146,14 @@ Copyright (c) ISLAM JA. All rights reserved.
 - Email / البريد: **islamabuaker83@gmail.com** (send HWID for licensing / أرسل HWID للترخيص)
 - TikTok: https://tiktok.com/@ps4easytool
 - GitHub: https://github.com/ISLAMGAZA/PS4-NOR-SYSCON-LIMITED
+
+---
+
+## UPDATE - 2026-09-12: RSA license keys (works on EVERY machine)
+
+license.key is now signed with RSA-2048 (owner PRIVATE key). The tool embeds
+ONLY the PUBLIC key, so any copy verifies licensed keys with NO secret present,
+yet nobody can forge one. Keys remain HWID-locked (one device).
+The trial usage counter trusts its file when no secret exists (fresh install =
+5 attempts); tampering only resets the trial.
+Never share: .lic_secret, .lic_rsa, DONORS donor dumps.
