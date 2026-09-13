@@ -31,7 +31,6 @@ Archive password: **`ISLAMJAMEL`**
 
 Three small convenience packs are attached to this release too
 (DONORS-minimal, DONORS-NOR-own-full, DONORS-Syscon-minimal).
-![1](1.PNG)
 
 # PS4 NOR-SYSCON EASY TOOL - Limited Edition v2.0-beta
 **Professional PS4 NOR (sflash) + Syscon repair toolkit**
