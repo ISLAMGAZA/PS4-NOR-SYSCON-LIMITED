@@ -136,5 +136,4 @@ See [FAULTS.md](FAULTS.md)
 [SECURITY.md](SECURITY.md)
 
 ## License / الترخيص
-© ISLAM JA. Proprietary - redistribution or commercial resale prohibited. / الملكية خاصة - يُمنع إعادة التوزيع أو البيع دون إذن. Redistribution or commercial resale without written permission is prohibited.
-ملكية خاصة. © ISLAM JA. Proprietary - redistribution or commercial resale prohibited. / الملكية خاصة - يُمنع إعادة التوزيع أو البيع دون إذن. يُمنع إعادة التوزيع أو البيع دون إذن كتابي.
+© ISLAM JA. 
