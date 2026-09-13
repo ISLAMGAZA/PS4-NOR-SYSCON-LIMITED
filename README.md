@@ -46,36 +46,26 @@ Owner / المالك: **ISLAM JA**
 ---
 
 ## Main Menu / القائمة الرئيسية
-```
+```text
 Diagnostics (read-only) / التشخيص
-  [1] NOR Analyser      / تحليل NOR
-  [2] Syscon Analyser   / تحليل Syscon
-  [3] UART Log Diagnosis/ تشخيص UART
+  [1] NOR Analyser       / تحليل NOR
+  [2] Syscon Analyser    / تحليل Syscon
+  [3] UART Log Diagnosis / تشخيص UART
 
 Repair / التصليح
   [4] Full Auto-Repair (BLOD)
-  [D] Downgrade (specialised)      / داونجريد متخصص
-  [R] Restore from donor           / استعادة من مانح
-
-Syscon + Donors
-  [7] Syscon Matcher + Builder
-  [8] Browse Donor Library
-  [9] Rebuild Donor Database
+  [D] Downgrade (specialised - no other repairs) / داونجريد متخصص
+  [R] Restore from donor (severe damage)          / استعادة من مانح
+  [X] EAP Rescue All Models - 3 Outputs (Fat/Slim/Pro)
+  [Z] Fat Aeolia EAP Rescue (3 outputs)
+  [Y] Regenerate NVS (CID/UNK) - 3 outputs
 
 Tools / الأدوات
-  [10] NOR <-> Syscon Matcher Tool
-  [11] Hash Database Manager
-
-EAP Rescue (last resort) / إنقاذ EAP (الملاذ الأخير)
-  [X] EAP Rescue All Models (3 outputs)
-  [Z] Fat Aeolia EAP Rescue (3 outputs)
-  [0] Exit / خروج
+  [8]  Browse Donor Library   / تصفح مكتبة الدونرز
+  [9]  Rebuild Donor Database / إعادة بناء قاعدة الدونرز
+  [11] Hash Database Manager  / مدير قاعدة الهاش
+  [0]  Exit / خروج
 ```
-
-**Per-option documentation (EN + AR): [OPTIONS_GUIDE.md](OPTIONS_GUIDE.md)**
-**شرح كل خيار على حدة: [OPTIONS_GUIDE.md](OPTIONS_GUIDE.md)**
-
----
 
 ## Core guarantee / الضمان الأساسي
 **The original dump is NEVER modified.** Every result is a new file in `OUTPUT/`.
@@ -146,5 +136,5 @@ See [FAULTS.md](FAULTS.md)
 [SECURITY.md](SECURITY.md)
 
 ## License / الترخيص
-Proprietary. © ISLAM JA. Redistribution or commercial resale without written permission is prohibited.
-ملكية خاصة. © ISLAM JA. يُمنع إعادة التوزيع أو البيع دون إذن كتابي.
+© ISLAM JA. Proprietary - redistribution or commercial resale prohibited. / الملكية خاصة - يُمنع إعادة التوزيع أو البيع دون إذن. Redistribution or commercial resale without written permission is prohibited.
+ملكية خاصة. © ISLAM JA. Proprietary - redistribution or commercial resale prohibited. / الملكية خاصة - يُمنع إعادة التوزيع أو البيع دون إذن. يُمنع إعادة التوزيع أو البيع دون إذن كتابي.
