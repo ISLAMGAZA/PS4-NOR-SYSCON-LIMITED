@@ -6,7 +6,6 @@ Free trial (5 REPAIR ATTEMPTS) runs this Limited EXE. Get the **FULL edition** -
 
 ▶ **https://ko-fi.com/s/3255858621**  (Ko-fi purchase page)
 
-1.PNG
 
 ---
 
@@ -88,11 +87,14 @@ Tools / الأدوات
 
 ## Screenshots / لقطات من البرنامج
 
+![1](1.PNG)
 
 ![2](2.PNG)
-4.PNG
-4.PNG
----
+
+![3](3.PNG)
+
+![4](4.PNG)
+
 
 ## Limited vs Licensed / المحدود مقابل المرخّص
 
